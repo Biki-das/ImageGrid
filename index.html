@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image Grid Generator</h1>
+      <label for="input" class="custom-file-upload"> Choose an image </label>
+      <input
+        id="input"
+        name="image-input"
+        type="file"
+        accept="image/png, image/jpeg, image/webp"
+      />
+      <div id="canvas-container">
+        <canvas id="canvas"></canvas>
+        <div id="loading">Processing image...</div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
